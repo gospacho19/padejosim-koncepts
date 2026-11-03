@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Padejosim? Pasākumu vieta Rīgā, dizaina priekšlikums</title>
+<meta name="description" content="Dizaina priekšlikums pasākumu vietai „Padejosim?”: 330 m² zāle līdz 200 cilvēkiem Rīgā, Brīvības gatvē 401c, ar datuma pieteikumu.">
+<meta name="theme-color" content="#16110d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316110d'/%3E%3Ctext x='32' y='49' font-family='Georgia,serif' font-size='50' font-style='italic' text-anchor='middle' fill='%23f3b65c'%3E?%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,500;0,600;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#16110d; --night2:#221a13; --steel:#0e0b09;
+  --paper:#f6efe3; --plaster:#eadfcd; --card:#fcf8f0;
+  --ink:#1f1812; --ink2:#55493e; --mute:#74665a;
+  --brick:#a05634; --brick-d:#853f20;
+  --bulb:#f3b65c; --bulb-d:#e6a443;
+  --gold:#b89657;
+  --on:#f5ecdc; --on2:#c2b29c; --on3:#917f6b;
+  --serif:'Brygada 1918',Georgia,'Times New Roman',serif;
+  --sans:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.55 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+[data-lang][hidden]{display:none!important}
+[hidden]{display:none!important}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-.012em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+[id]{scroll-margin-top:16px}
+svg{flex:none}
+
+/* notice */
+.notice{background:var(--steel);color:#cbbda7;font-size:12.5px;line-height:1.35;padding:7px 20px;text-align:center}
+.notice b{color:var(--bulb);font-weight:600}
+
+/* top */
+.top{background:var(--night);color:var(--on)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:block;line-height:0}
+.logo img{height:46px;width:auto}
+.top nav{display:none}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15.5px;text-decoration:none;letter-spacing:.01em}
+.tel svg{width:17px;height:17px;color:var(--bulb)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 20px;border-radius:3px;border:0;font:600 16px/1.1 var(--sans);cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn.lit{background:var(--bulb);color:#1c140c}
+.btn.lit:hover{background:var(--bulb-d)}
+.btn.ink{background:var(--ink);color:var(--paper)}
+.btn.ink:hover{background:#000}
+:focus-visible{outline:2px solid var(--bulb);outline-offset:3px}
+
+/* date field */
+.datef{position:relative;display:flex;align-items:center;gap:10px;height:54px;padding:0 14px;background:rgba(245,236,220,.07);border:1px solid rgba(245,236,220,.36);border-radius:3px;color:var(--on);font-size:16px;font-weight:500;min-width:0}
+.datef svg{width:20px;height:20px;color:var(--bulb)}
+.datef .dtxt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.datef.empty .dtxt{color:var(--on2);font-weight:400}
+.datef input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px;margin:0;padding:0;border:0}
+.datef input::-webkit-calendar-picker-indicator{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;opacity:0;cursor:pointer}
+.datef:focus-within{outline:2px solid var(--bulb);outline-offset:2px}
+
+/* hero */
+.hero{background:var(--night);color:var(--on);position:relative}
+.hero-ph{position:relative;height:420px;height:clamp(270px,calc(100svh - 428px),430px);overflow:hidden;margin:0;display:block}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.hero-ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:52%;background:linear-gradient(to bottom,rgba(22,17,13,0),rgba(22,17,13,.78) 58%,var(--night))}
+.hero-in{position:relative;margin-top:-92px;padding-bottom:20px}
+.where{font-size:13.5px;font-weight:500;color:var(--bulb);margin-bottom:9px;letter-spacing:.01em}
+h1{font-size:46px;line-height:.98}
+.lead{font-size:16.5px;line-height:1.45;color:var(--on2);margin-top:12px;max-width:30em}
+.lead-g{display:block;color:var(--on)}
+.starter{margin-top:18px}
+.starter-l{display:block;font-size:15px;font-weight:600;margin-bottom:8px}
+.starter-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.callline{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:6px;color:var(--on2);font-size:15px;text-decoration:none}
+.callline b{color:var(--on);font-weight:600;text-decoration:underline;text-decoration-color:rgba(243,182,92,.7);text-underline-offset:4px}
+
+/* sections */
+.sec{padding:60px 0}
+.h2{font-size:34px;line-height:1.05}
+.sub{color:var(--ink2);margin-top:12px;max-width:34em}
+
+/* facts */
+.zale{margin:26px -20px 0}
+.zale img{width:100%}
+.zale figcaption{font-size:13.5px;color:var(--mute);padding:9px 20px 0}
+.logs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:var(--steel);padding:6px;margin-top:30px}
+.rut{background:var(--card);padding:14px 13px 15px;min-height:108px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:var(--ink)}
+.rut b{font-family:var(--serif);font-weight:600;font-size:24px;line-height:1.04;letter-spacing:-.012em}
+.rut.num{min-height:128px}
+.rut.num b{font-size:38px}
+.rut span{font-size:14px;line-height:1.35;color:var(--ink2);margin-top:6px}
+.rut.lit{background:var(--bulb)}
+.rut.lit:hover{background:var(--bulb-d)}
+.rut.lit span{color:#4a3413;font-weight:500;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.rut.lit svg{width:16px;height:16px;color:#1c140c}
+.rut b small{font-size:.5em;font-weight:500;letter-spacing:0}
+.zvaig{font-size:13.5px;color:var(--mute);margin-top:12px}
+.paklajs{margin:44px 0 0;display:grid;grid-template-columns:minmax(0,56fr) minmax(0,44fr);gap:18px;align-items:end}
+.paklajs img{width:100%}
+.paklajs figcaption{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;line-height:1.24;color:var(--ink);padding-bottom:4px}
+.paklajs figcaption small{display:block;font-family:var(--sans);font-style:normal;font-weight:400;font-size:13px;line-height:1.35;color:var(--mute);margin-top:10px;text-wrap:balance}
+
+/* occasions */
+.pasak{padding-top:8px}
+.pas-list{margin-top:34px;display:grid;gap:48px}
+.pas-ph{overflow:hidden}
+.pas:nth-child(odd) .pas-ph{margin-left:-20px}
+.pas:nth-child(even) .pas-ph{margin-right:-20px}
+.pas-ph img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.pas h3{font-size:26px;line-height:1.1;margin-top:18px}
+.pas h3 em{display:block;font-style:italic;font-weight:500;color:var(--brick)}
+.pas p{color:var(--ink2);margin-top:10px;max-width:33em}
+.ask{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:6px;font-weight:600;font-size:15.5px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--brick);text-decoration-thickness:1.5px;text-underline-offset:5px}
+.ask svg{width:16px;height:16px;color:var(--brick)}
+.vel{margin-top:46px;padding-top:26px;border-top:1px solid rgba(31,24,18,.16);color:var(--ink2)}
+.vel b{color:var(--ink);font-weight:600}
+.vel a{color:var(--ink);font-weight:500;text-decoration-color:var(--brick);text-underline-offset:4px}
+
+/* reviews */
+.ats{background:var(--plaster);padding-top:0}
+.ats-ph{margin:0 -20px}
+.ats-ph img{width:100%;aspect-ratio:16/9;object-fit:cover}
+blockquote{margin:0}
+.q-big{margin-top:30px}
+.q-big p{font-family:var(--serif);font-weight:600;font-size:31px;line-height:1.1;letter-spacing:-.012em;text-wrap:balance}
+cite{display:block;font-style:normal;font-size:14px;color:var(--ink2);margin-top:14px}
+cite b{font-weight:600;color:var(--ink)}
+.q-two{display:grid;gap:30px;margin-top:38px}
+.q-two blockquote{padding-left:16px;border-left:2px solid var(--brick)}
+.q-two p{font-size:16.5px;line-height:1.5}
+.rating{margin-top:36px;font-size:14px;line-height:1.45;color:var(--ink2);max-width:36em}
+.rating b{font-family:var(--serif);font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.01em}
+
+/* tool */
+.tool{background:var(--night);color:var(--on);padding:0 0 64px}
+.virtene{height:38px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='156' height='38' viewBox='0 0 156 38'%3E%3Cpath d='M0 3 Q78 39 156 3' fill='none' stroke='%23493b2e' stroke-width='1'/%3E%3Cg fill='%23f3b65c'%3E%3Ccircle cx='26' cy='16' r='8' opacity='.13'/%3E%3Ccircle cx='26' cy='16' r='2.5'/%3E%3Ccircle cx='78' cy='23.5' r='8' opacity='.13'/%3E%3Ccircle cx='78' cy='23.5' r='2.5'/%3E%3Ccircle cx='130' cy='16' r='8' opacity='.13'/%3E%3Ccircle cx='130' cy='16' r='2.5'/%3E%3C/g%3E%3C/svg%3E") repeat-x 50% 0}
+.tool-head{padding-top:30px}
+.kick{font-size:13.5px;font-weight:500;color:var(--bulb);letter-spacing:.01em;margin-bottom:10px}
+.tool .h2{font-size:34px}
+.tool .sub{color:var(--on2)}
+.tool-grid{display:grid;gap:34px;margin-top:30px}
+.fld{margin:0 0 26px;padding:0;border:0;min-width:0}
+.lab{display:flex;align-items:baseline;gap:9px;font-size:16px;font-weight:600;margin-bottom:10px;padding:0}
+.lab i{font-family:var(--serif);font-style:italic;font-weight:500;font-size:19px;color:var(--bulb)}
+.hint{font-size:13.5px;color:var(--bulb);margin-top:8px}
+.hint:empty{display:none}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chips.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.chip{min-height:50px;padding:6px 10px;background:transparent;border:1px solid rgba(245,236,220,.3);border-radius:3px;color:var(--on);font-size:15.5px;font-weight:500;line-height:1.15;cursor:pointer;text-align:center}
+.chip:hover{border-color:rgba(245,236,220,.6)}
+.chip[aria-pressed="true"]{background:var(--bulb);border-color:var(--bulb);color:#1c140c;font-weight:600}
+.txt{display:block;width:100%;height:54px;padding:0 14px;background:rgba(245,236,220,.07);border:1px solid rgba(245,236,220,.36);border-radius:3px;color:var(--on);font-size:16px}
+.txt::placeholder{color:var(--on3)}
+.txt:focus{outline:2px solid var(--bulb);outline-offset:2px}
+#occ-other{margin-top:8px}
+.chk{display:flex;align-items:center;gap:12px;min-height:50px;margin:-6px 0 22px;cursor:pointer;font-size:16px}
+.chk input{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;margin:0;border:1px solid rgba(245,236,220,.5);border-radius:3px;background:transparent;display:grid;place-items:center;cursor:pointer}
+.chk input:checked{background:var(--bulb);border-color:var(--bulb)}
+.chk input:checked::after{content:"";width:11px;height:6px;border-left:2px solid #1c140c;border-bottom:2px solid #1c140c;transform:translateY(-1px) rotate(-45deg)}
+.fld.last{margin-bottom:0}
+.opt{font-weight:400;color:var(--on3);font-size:14px}
+
+.letter{background:var(--paper);color:var(--ink);padding:20px 18px 22px;border-radius:2px;box-shadow:0 0 0 1px var(--gold),0 0 0 5px var(--night),0 0 0 6px rgba(184,150,87,.55)}
+.prev{min-width:0;padding:6px}
+.prev-l{font-size:13.5px;font-weight:500;color:var(--on2);margin:0 0 16px -6px}
+.lh{display:grid;grid-template-columns:62px minmax(0,1fr);gap:8px;font-size:14.5px;line-height:1.35;padding:7px 0;border-bottom:1px solid rgba(31,24,18,.13);overflow-wrap:anywhere}
+.lh span{color:var(--mute)}
+.lh b{font-weight:600}
+.lb{white-space:pre-wrap;font-size:15.5px;line-height:1.5;margin-top:14px;overflow-wrap:anywhere}
+.send{margin:22px -6px 0;display:grid;gap:10px}
+.send .btn{width:100%}
+.alt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.btn.line{background:transparent;border:1px solid rgba(245,236,220,.36);color:var(--on);padding:0 10px;font-size:15px}
+.btn.line:hover{border-color:var(--on)}
+.fine{font-size:13.5px;line-height:1.45;color:var(--on3);margin:16px -6px 0}
+.saim{margin:30px -6px 0;padding-top:22px;border-top:1px solid rgba(245,236,220,.16)}
+.saim p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;line-height:1.25;color:var(--on);text-wrap:balance}
+.saim span{display:block;font-size:13.5px;color:var(--on3);margin-top:10px;line-height:1.45}
+
+/* getting there */
+.cels-grid{display:grid;gap:34px}
+.addr{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.15;margin-top:18px}
+.trans{margin-top:22px;display:grid;gap:10px}
+.line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.line .tl{width:98px;font-size:15.5px;color:var(--ink2)}
+.nr{display:inline-grid;place-items:center;min-width:40px;height:40px;padding:0 9px;background:var(--ink);color:var(--paper);font-weight:600;font-size:17px;border-radius:3px;font-variant-numeric:tabular-nums}
+.nr.tram{background:var(--brick);color:#fff}
+.stop{color:var(--ink2);margin-top:4px}
+.auto{margin-top:18px;color:var(--ink2)}
+.auto b{color:var(--ink);font-weight:600}
+.cels .btn{margin-top:22px}
+.zime{margin:0 -20px}
+.zime img{width:100%}
+.zime figcaption{font-size:14.5px;line-height:1.45;color:var(--ink2);padding:12px 20px 0}
+
+/* footer */
+.foot{background:var(--night);color:var(--on2);padding:52px 0 104px;font-size:15.5px}
+.foot .logo img{height:76px}
+.f-what{margin-top:10px;color:var(--on3);font-size:14.5px}
+.f-cols{display:grid;gap:2px;margin-top:22px}
+.f-cols a,.f-cols span{display:inline-flex;align-items:center;min-height:40px;color:var(--on);text-decoration:none}
+.f-cols a{text-decoration:underline;text-decoration-color:rgba(245,236,220,.28);text-underline-offset:4px}
+.f-note{margin-top:34px;padding:20px 18px;border:1px dashed rgba(243,182,92,.5);border-radius:3px;font-size:14.5px;line-height:1.5}
+.f-note h4{margin:0 0 4px;font:600 14.5px/1.3 var(--sans);color:var(--bulb)}
+.f-note p{margin-top:10px}
+.f-note b{color:var(--on);font-weight:600}
+.f-note a{color:var(--on);text-underline-offset:3px}
+.legal{margin-top:26px;font-size:13.5px;line-height:1.5;color:var(--on3)}
+.legal a{color:var(--on2)}
+
+/* dock */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--steel);border-top:1px solid rgba(245,236,220,.16);transform:translateY(110%);transition:transform .25s ease;color:var(--on)}
+.dock.on,.dock.sum{transform:none}
+.dock-a,.dock-b{display:none;gap:8px;align-items:center}
+.dock.on .dock-a{display:grid;grid-template-columns:minmax(0,1fr) 54px}
+.dock.sum .dock-b{display:grid;grid-template-columns:minmax(0,1fr) auto}
+.dsum{min-width:0;font-size:15px;line-height:1.25}
+.dsum span{display:block;font-size:12.5px;color:var(--on3)}
+.dsum b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dock .btn{min-height:50px}
+.dock .btn.line{padding:0}
+.dock .btn.line svg{width:20px;height:20px;color:var(--bulb)}
+
+@media (max-width:380px){
+  .notice{font-size:12px;padding:7px 12px}
+  .starter .datef{font-size:15px;padding:0 11px;gap:8px}
+  .starter .btn{padding:0 15px}
+  h1{font-size:42px}
+}
+/* short phone screens (older small iPhones show about 550 px in Safari): a lower photo keeps the date field on the first screen */
+@media (max-width:899px) and (max-height:640px){
+  .hero-ph{height:clamp(170px,calc(100svh - 428px),430px)}
+  .hero-ph::after{height:74%}
+  .hero-in{margin-top:-72px}
+}
+@media (min-width:600px){
+  .chips{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .chips.g3{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media (min-width:900px){
+  body{font-size:17px}
+  .wrap{padding:0 40px}
+  .notice{font-size:13px}
+  .top .wrap{height:76px}
+  .logo img{height:54px}
+  .top nav{display:flex;gap:30px;font-size:15px;font-weight:500}
+  .top nav a{text-decoration:none;color:var(--on2);padding:10px 0}
+  .top nav a:hover{color:var(--on)}
+  .hero{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,12fr);align-items:stretch}
+  .hero-ph{order:2;height:auto;min-height:clamp(540px,calc(100vh - 112px),740px)}
+  .hero-ph img{position:absolute;inset:0;object-position:50% 30%}
+  .hero-ph::after{top:0;bottom:0;right:auto;width:26%;height:auto;background:linear-gradient(to right,var(--night),rgba(22,17,13,0))}
+  .hero-in{order:1;margin:0;align-self:center;max-width:none;padding:48px 56px 56px max(40px,calc((100vw - 1160px)/2 + 40px))}
+  .where{font-size:15px;margin-bottom:14px}
+  h1{font-size:clamp(60px,6vw,84px);line-height:.95}
+  .lead{font-size:19px;margin-top:20px}
+  .starter{margin-top:34px;max-width:470px}
+  .starter-l{font-size:16px}
+  .sec{padding:104px 0}
+  .h2{font-size:52px;line-height:1.02}
+  .tool .h2{font-size:52px}
+  .sub{font-size:18px;margin-top:16px}
+  .facts-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:end}
+  .zale{margin:0}
+  .zale figcaption{padding:10px 0 0}
+  .logs{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;padding:8px;margin-top:56px}
+  .rut{min-height:150px;padding:18px 18px 20px}
+  .rut b{font-size:28px}
+  .rut.num,.rut{min-height:150px}
+  .rut.num b{font-size:50px}
+  .rut span{font-size:15px}
+  .paklajs{grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:48px;margin:88px 0 0 auto;max-width:880px}
+  .paklajs figcaption{font-size:34px;line-height:1.16;padding-bottom:10px}
+  .paklajs figcaption small{font-size:14px;margin-top:16px}
+  .pasak{padding-top:0}
+  .pas-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:72px 56px;margin-top:56px}
+  .pas:nth-child(odd) .pas-ph,.pas:nth-child(even) .pas-ph{margin:0}
+  .pas:nth-child(even){margin-top:72px}
+  .pas h3{font-size:32px;margin-top:22px}
+  .vel{margin-top:72px;font-size:18px}
+  .ats{padding-top:104px}
+  .ats-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:center}
+  .ats-ph{margin:0}
+  .ats-ph img{aspect-ratio:4/3}
+  .q-big{margin-top:0}
+  .q-big p{font-size:50px;line-height:1.05}
+  .q-two{grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;margin-top:72px}
+  .q-two blockquote{padding-left:22px}
+  .rating{margin-top:56px;font-size:15px}
+  .tool{padding-bottom:110px}
+  .tool-head{padding-top:62px}
+  .tool-grid{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;margin-top:52px;align-items:start}
+  .prev{position:sticky;top:24px}
+  .cels-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:center}
+  .zime{margin:0}
+  .zime figcaption{padding:12px 0 0}
+  .addr{font-size:32px}
+  .foot{padding:80px 0 64px}
+  .foot-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px}
+  .f-note{margin-top:0}
+  .dock{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dock{transition:none}}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav „Padejosim?” oficiālā lapa.</span></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#sakums" aria-label="Padejosim?"><img src="img/logo.png" width="520" height="283" alt="Padejosim?"></a>
+    <nav aria-label="Lapas sadaļas">
+      <a href="#zale">Zāle</a>
+      <a href="#pasakumi">Pasākumi</a>
+      <a href="#atsauksmes">Atsauksmes</a>
+      <a href="#pieteikums">Datuma pieteikums</a>
+      <a href="#atbraukt">Kā atbraukt</a>
+    </nav>
+    <a class="tel" href="tel:+37126110110"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>26 110 110</a>
+  </div>
+</header>
+
+<main id="sakums">
+<section class="hero">
+  <picture class="hero-ph">
+    <source media="(min-width:900px)" srcset="img/hero-d.jpg">
+    <img src="img/hero-m.jpg" width="840" height="1008" alt="Zāles melnās stikla durvis ķieģeļu sienā, virs tām spoguļa zīme ar uzrakstu Padejosim? un gaismu virtenes" fetchpriority="high">
+  </picture>
+  <div class="hero-in wrap">
+    <p class="where">Pasākumu vieta Rīgā, Brīvības gatvē 401c</p>
+    <h1>Zāle visiem<br>un visam</h1>
+    <p class="lead">330 m² ar labu deju grīdu, ķieģeļu sienām un gaismu virtenēm. Līdz 200 cilvēkiem. <span class="lead-g">Google vērtējums 5,0, 146 atsauksmes.</span></p>
+    <div class="starter">
+      <span class="starter-l" id="st-l">Vai zāle tavā datumā ir brīva?</span>
+      <div class="starter-row">
+        <label class="datef empty" id="df1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+          <span class="dtxt" id="dt1">Izvēlies datumu</span>
+          <input type="date" id="d1" aria-labelledby="st-l">
+        </label>
+        <a class="btn lit" href="#pieteikums" id="go1">Pajautāt</a>
+      </div>
+      <a class="callline" href="tel:+37126110110">vai zvani saimniecei: <b>26 110 110</b></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="zale">
+  <div class="wrap">
+    <div class="facts-top">
+      <div>
+        <h2 class="h2">Jautāsi, kas tad mums īsti ir?</h2>
+        <p class="sub">Viss, kas nepieciešams tavam pasākumam, mājīgās telpās: ķieģeļu sienas, atklātas jumta kopnes, neordināras lampas un gaismu virtenes.</p>
+      </div>
+      <figure class="zale">
+        <img src="img/zale.jpg" width="958" height="639" alt="Tukša zāle dienas gaismā: parkets, melnas jumta kopnes, ķieģeļu siena ar melnām durvīm" loading="lazy">
+        <figcaption>Zāle tukša, pirms tajā ienāk tavs pasākums.</figcaption>
+      </figure>
+    </div>
+
+    <div class="logs" role="list" aria-label="Zāles fakti">
+      <div class="rut num" role="listitem"><b>330 m²</b><span>zāle ar labu deju grīdu</span></div>
+      <div class="rut num" role="listitem"><b><small>līdz</small> 200</b><span>cilvēkiem</span></div>
+      <div class="rut num" role="listitem"><b>17,5 m</b><span>spogulis pa visu sienu</span></div>
+      <div class="rut" role="listitem"><b>Skatuve</b><span>nedaudz paaugstināta</span></div>
+      <div class="rut" role="listitem"><b>Projektors</b><span>un skaņas aparatūra</span></div>
+      <div class="rut" role="listitem"><b>Palīgtelpa</b><span>ēdinātājiem, vai lai noslēptu no viesiem pašu Žoržu Siksnu*</span></div>
+      <div class="rut" role="listitem"><b>Ģērbtuve</b><span>garderobe un divas telpas, kur pārģērbties</span></div>
+      <div class="rut" role="listitem"><b>Duša</b><span>un vairākas labierīcības</span></div>
+      <div class="rut" role="listitem"><b>Stāvvieta</b><span>bezmaksas, tieši pie durvīm</span></div>
+      <a class="rut lit" role="listitem" href="#pieteikums"><b>Cena?</b><span>Pajautā kopā ar datumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <p class="zvaig">* Žoržs Siksna nenāk komplektā ar zāles īri.</p>
+
+    <figure class="paklajs">
+      <img src="img/paklajs.jpg" width="700" height="875" alt="Gaitenis uz zāli: melns paklājs, sveces uz apaļiem galdiņiem, atvērtas zāles durvis" loading="lazy">
+      <figcaption>Paklājs, kurš liek viesiem justies kā slavenībām uz sarkanā paklāja, tikai mums ir melns.<small>Gaitenis pirms zāles durvīm.</small></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec pasak" id="pasakumi">
+  <div class="wrap">
+    <h2 class="h2">Nevari atrast telpas pasākumam?</h2>
+    <div class="pas-list">
+      <article class="pas">
+        <div class="pas-ph"><img src="img/kazas.jpg" width="880" height="573" alt="Zāle sagatavota kāzu ceremonijai: caurspīdīgi krēsli, zaļumu vainags pie ķieģeļu sienas, sveces" loading="lazy"></div>
+        <h3>Kāzas tikai tuvāko 100 radu un draugu lokā? <em>Nav problēmu.</em></h3>
+        <p>Uzaicini uz šīm mazajām kāzām arī tos radus, kuri apvainosies, ja neuzaicināsi. Palīdzēsim arī ar pirmo deju: kopā izvēlēsimies deju, ieteiksim mūziku un izveidosim horeogrāfiju.</p>
+        <a class="ask" href="#pieteikums" data-occ="kazas">Pajautāt par kāzu datumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="pas">
+        <div class="pas-ph"><img src="img/balle.jpg" width="880" height="587" alt="Zāle ar apaļiem, baltiem galdiem un galdu numuriem zem zaļi izgaismotām jumta kopnēm" loading="lazy"></div>
+        <h3>Darba balle 200 cilvēkiem? <em>Nav problēmu.</em></h3>
+        <p>Šo deju grīdu mīl ne tikai profesionāli dejotāji, bet arī Janka savā darba korporatīvā. Tā piešķir maģiskas spējas dejot pat tiem, kuri nedejo. It īpaši pēc pāris tostiem.</p>
+        <a class="ask" href="#pieteikums" data-occ="balle">Pajautāt par balles datumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="pas">
+        <div class="pas-ph"><img src="img/seminars.jpg" width="880" height="571" alt="Zāle semināram: augsti krēsli rindās, projektors uz galdiņa, logi ar dienas gaismu" loading="lazy"></div>
+        <h3>Seminārs uz lielā ekrāna? <em>Arī nav problēmu.</em></h3>
+        <p>Plāno semināru vai vienkārši gribi mācīt cilvēkiem, kā dzīvot? Savas gudrības vari parādīt uz lielā ekrāna, jo pieejams projektors un skaņu sistēma.</p>
+        <a class="ask" href="#pieteikums" data-occ="seminars">Pajautāt par semināra datumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="pas">
+        <div class="pas-ph"><img src="img/skatuve.jpg" width="880" height="655" alt="Skatuve pie ķieģeļu sienas, uz tās viens pats ādas krēsls, virs tās gaismu virtenes" loading="lazy"></div>
+        <h3>Dzimšanas diena vienam pašam? <em>Nav problēmu!</em></h3>
+        <p>Vari noīrēt šo vietu, lai pabūtu viens zāles vidū pie vakariņu galda, skatoties spogulī un apspriežoties ar vienīgo sakarīgo cilvēku zālē.</p>
+        <a class="ask" href="#pieteikums" data-occ="dzd">Pajautāt par svinību datumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+    <p class="vel"><b>Un vēl:</b> izlaidumi, vecmeitu ballītes, uzņēmuma jubilejas, deju nodarbības, fotosesijas un deju video. Meistarklasēm un jogai zālē pietiks vietas visiem ne tikai vertikālā stāvoklī, bet arī horizontālā. <a href="#pieteikums" data-occ="berni">Bērnu ballītei</a> var iznomāt arī piepūšamo šķēršļu joslu, griestu augstums atļauj. Vairāk bilžu ir mūsu <a href="https://www.instagram.com/padejosim_pasakumuvieta/" target="_blank" rel="noopener">Instagram profilā</a>.</p>
+  </div>
+</section>
+
+<section class="sec ats" id="atsauksmes">
+  <div class="wrap">
+    <div class="ats-top">
+      <figure class="ats-ph"><img src="img/ziedi.jpg" width="880" height="586" alt="Svētku galds ar baltiem ziediem zeltītās pudelēs, fonā gaismu virtenes" loading="lazy"></figure>
+      <blockquote class="q-big">
+        <p>„Kaut telpas ir lielas, plašas, bet sajūta ir ļoti mājīga.”</p>
+        <cite><b>Linda Rozenberga</b>, Google atsauksme</cite>
+      </blockquote>
+    </div>
+    <div class="q-two">
+      <blockquote>
+        <p>„Perfekta vieta pasākumiem. Ērta loģistika, ēdinātājiem, mūziķiem, māksliniekiem, dekorētājiem. Ir lokāli apskaņots, divas ieejas. Derēs kā lietišķām konferencēm, tā svinīgiem vakariem vai atraktīvām ballēm.”</p>
+        <cite><b>Agris Magons</b>, Google atsauksme</cite>
+      </blockquote>
+      <blockquote>
+        <p>„Mūsu Ziemassvētku pasākums noritēja lieliski … Sajūta bija, ka mums blakus ir cilvēks, kuram patiesi rūp pasākuma izdošanās, nevis tikai telpu noma.”</p>
+        <cite><b>Ineta Varkale</b>, Google atsauksme par saimnieci Kristīni</cite>
+      </blockquote>
+    </div>
+    <p class="rating"><b>5,0 no 5</b> Google, 146 atsauksmes. Facebook lapā iesaka 98 % (241 atsauksme).</p>
+  </div>
+</section>
+
+<section class="tool" id="pieteikums">
+  <div class="virtene" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="tool-head">
+      <p class="kick">Datuma pieteikums</p>
+      <h2 class="h2">Tagad atliek tikai vienoties par laiku</h2>
+      <p class="sub">Trīs izvēles, un e-pasts saimniecei ir uzrakstīts. Tev atliek to nosūtīt.</p>
+    </div>
+    <div class="tool-grid">
+      <form class="tf" id="tf" novalidate>
+        <div class="fld">
+          <span class="lab" id="l-d"><i>1</i> Kurā datumā?</span>
+          <label class="datef empty" id="df2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+            <span class="dtxt" id="dt2">Izvēlies datumu</span>
+            <input type="date" id="d2" aria-labelledby="l-d">
+          </label>
+          <p class="hint" id="dhint" role="status"></p>
+        </div>
+        <div class="fld" role="group" aria-labelledby="l-o">
+          <span class="lab" id="l-o"><i>2</i> Kāds pasākums?</span>
+          <div class="chips" id="occ">
+            <button type="button" class="chip" data-v="kazas" aria-pressed="false">Kāzas</button>
+            <button type="button" class="chip" data-v="zsv" aria-pressed="false">Ziemassvētku balle</button>
+            <button type="button" class="chip" data-v="balle" aria-pressed="false">Darba balle</button>
+            <button type="button" class="chip" data-v="seminars" aria-pressed="false">Seminārs</button>
+            <button type="button" class="chip" data-v="dzd" aria-pressed="false">Dzimšanas diena</button>
+            <button type="button" class="chip" data-v="berni" aria-pressed="false">Bērnu ballīte</button>
+            <button type="button" class="chip" data-v="dejas" aria-pressed="false">Deju nodarbība</button>
+            <button type="button" class="chip" data-v="cits" aria-pressed="false">Cits</button>
+          </div>
+          <input class="txt" id="occ-other" type="text" maxlength="60" placeholder="Uzraksti, kāds pasākums" aria-label="Cits pasākums" hidden>
+        </div>
+        <div class="fld" role="group" aria-labelledby="l-g">
+          <span class="lab" id="l-g"><i>3</i> Cik cilvēku?</span>
+          <div class="chips g3" id="gst">
+            <button type="button" class="chip" data-v="līdz 30" aria-pressed="false">līdz 30</button>
+            <button type="button" class="chip" data-v="30–60" aria-pressed="false">30–60</button>
+            <button type="button" class="chip" data-v="60–100" aria-pressed="false">60–100</button>
+            <button type="button" class="chip" data-v="100–150" aria-pressed="false">100–150</button>
+            <button type="button" class="chip" data-v="150–200" aria-pressed="false">150–200</button>
+          </div>
+        </div>
+        <label class="chk"><input type="checkbox" id="visit"><span>Gribu atbraukt apskatīt zāli klātienē</span></label>
+        <div class="fld last">
+          <label class="lab" for="sig">Paraksts <span class="opt">vārds un, ja ērtāk sazvanīties, tālrunis</span></label>
+          <input class="txt" id="sig" type="text" maxlength="80" autocomplete="name" placeholder="Nav obligāti">
+        </div>
+      </form>
+
+      <div class="prev" id="vestule">
+        <p class="prev-l">Tā izskatīsies tavs e-pasts:</p>
+        <div class="letter" aria-live="polite">
+          <p class="lh"><span>Kam</span><b>padejosim@padejosim.lv</b></p>
+          <p class="lh"><span>Temats</span><b id="subj"></b></p>
+          <div class="lb" id="body"></div>
+        </div>
+        <div class="send">
+          <a class="btn lit" id="send" href="mailto:padejosim@padejosim.lv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Atvērt e-pastā</a>
+          <div class="alt">
+            <button type="button" class="btn line" id="copy">Nokopēt tekstu</button>
+            <a class="btn line" href="tel:+37126110110">Zvanīt 26 110 110</a>
+          </div>
+        </div>
+        <p class="fine">Šī lapa pati neko nesūta: poga atver tavu e-pasta lietotni ar šo tekstu, un nosūtīšana paliek tavā ziņā. Nokopēto tekstu var ielīmēt arī Facebook vai Instagram ziņā.</p>
+        <div class="saim">
+          <p>„Lieliska saimniece, ar kuru sarunāt var visādus brīnumus, ja vien runā laipni.”</p>
+          <span>Tā mēs paši rakstām par savu saimnieci. Tāpēc vēstule sākas ar „Labdien” un beidzas ar „Paldies”.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cels" id="atbraukt">
+  <div class="wrap cels-grid">
+    <div>
+      <h2 class="h2">Kā atbraukt</h2>
+      <p class="addr">Rīga, Brīvības gatve 401c</p>
+      <div class="trans">
+        <div class="line"><span class="tl">Tramvajs</span><span class="nr tram">1</span></div>
+        <div class="line"><span class="tl">Trolejbuss</span><span class="nr">4</span><span class="nr">31</span><span class="nr">34</span></div>
+        <p class="stop">Pietura „Mārkalnes iela”.</p>
+      </div>
+      <p class="auto"><b>Ar auto:</b> bezmaksas autostāvvieta tieši pie durvīm.</p>
+      <a class="btn ink" href="https://maps.google.com/?cid=6564366379226764036" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Atvērt Google Maps</a>
+    </div>
+    <figure class="zime">
+      <img src="img/zime.jpg" width="880" height="440" alt="Spoguļa zīme zeltītā rāmī ar uzrakstu Padejosim? virs zāles durvīm" loading="lazy">
+      <figcaption>Šī zīme karājas virs zāles durvīm. Vislabāk ir atbraukt un aplūkot vietu klātienē.</figcaption>
+    </figure>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="#sakums" aria-label="Uz lapas sākumu"><img src="img/logo.png" width="520" height="283" alt="Padejosim?" loading="lazy"></a>
+      <p class="f-what">Pasākumu vieta Rīgā</p>
+      <div class="f-cols">
+        <a href="tel:+37126110110">26 110 110</a>
+        <a href="mailto:padejosim@padejosim.lv">padejosim@padejosim.lv</a>
+        <span>Rīga, Brīvības gatve 401c</span>
+        <a href="https://www.facebook.com/Padejosim/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/padejosim_pasakumuvieta/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div>
+      <div class="f-note">
+        <h4>Piezīmes saimniecei no Nikitas</h4>
+        <p><b>Kāpēc.</b> Pašreizējā padejosim.lv telefonā atveras kā datora lapa, samazināta līdz apmēram 40 %, ar tik sīkiem burtiem, ka bez pietuvināšanas tos grūti salasīt, un tajā nav ne cenu, ne pieteikuma formas. Google profila mājaslapas poga un Instagram saite šobrīd ved uz Facebook; kam nav Facebook konta vai kas tajā nav pieslēdzies, tam lapu aizsedz pieslēgšanās logs.</p>
+        <p><b>Cena.</b> Publiski cenu neatradu nekur, tāpēc lapā tās nav. Dzeltenajā rūtī „Cena?” var ierakstīt jūsu „īre no … €”.</p>
+        <p><b>Platība.</b> Izmantoju 330 m² un līdz 200 cilvēkiem, kā rakstīts lapā „Telpu noma”, deju nodarbību lapā un Instagram profilā. Lapā „Telpas pasākumiem” joprojām minēti 380 m², bet 2014. gada lapā par zāles īri līdz 70 personām.</p>
+        <p><b>Pārbaudiet.</b> Kāzu dejas iestudēšanu un piepūšamo šķēršļu joslu paņēmu no jūsu 2023. un 2019. gada ierakstiem. Ja vairs nepiedāvājat, izņemšu. Google un Facebook vērtējumi nolasīti 2026. gada 7. oktobrī.</p>
+        <p><b>Bildes.</b> No jūsu Google profila un padejosim.lv galerijām. Izvēlējos tādas, kurās neviens nav atpazīstams: divās tālumā redzami daži stāvi, bet ne sejas. Ja kādai vajadzīga fotogrāfa atļauja, nomainīšu. Šajā paraugā ir tikai deviņas bildes, īstajā lapā jūsu kāzu, ballu un semināru galerijas var palikt. Sadaļai „Kā atbraukt” noderētu viena bilde ar ieeju no pagalma vai ielas.</p>
+        <p><b>Pieteikums.</b> Šajā paraugā poga atver apmeklētāja e-pastu ar gatavu tekstu. Īstajā lapā pieteikums var nonākt uzreiz jūsu pastkastē.</p>
+        <p><b>Kas tālāk.</b> Ja patīk, šī lapa var stāties pašreizējās vietā jūsu adresē padejosim.lv, un Google un Instagram saites varēs vest uz jūsu pašu lapu. Atrakstiet: <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a>. Ja nav aktuāli, arī labi.</p>
+      </div>
+      <p class="legal">Šo lapu kā dizaina priekšlikumu sagatavoja Nikita, <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a>. Tā nav „Padejosim?” oficiālā lapa. Fotogrāfijas un logotips: „Padejosim?” Google profils un padejosim.lv. Teksti: padejosim.lv. Atsauksmes: Google.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <div class="dock-a">
+    <a class="btn lit" href="#pieteikums">Pajautāt par datumu</a>
+    <a class="btn line" href="tel:+37126110110" aria-label="Zvanīt 26 110 110"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+  </div>
+  <div class="dock-b">
+    <p class="dsum"><span>Tavs e-pasts saimniecei</span><b id="dsubj"></b></p>
+    <a class="btn lit" href="#vestule">Skatīt</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var TO = 'padejosim@padejosim.lv';
+  var WD_LOC = ['svētdien','pirmdien','otrdien','trešdien','ceturtdien','piektdien','sestdien'];
+  var WD_NOM = ['svētdiena','pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena'];
+  var WD_SHORT = ['svētd.','pirmd.','otrd.','trešd.','ceturtd.','piektd.','sestd.'];
+  var MON_LOC = ['janvārī','februārī','martā','aprīlī','maijā','jūnijā','jūlijā','augustā','septembrī','oktobrī','novembrī','decembrī'];
+  var OCC = {kazas:'kāzas', zsv:'Ziemassvētku balle', balle:'darba balle', seminars:'seminārs', dzd:'dzimšanas diena', berni:'bērnu ballīte', dejas:'deju nodarbība', cits:''};
+  var st = {d:null, occ:'', other:'', g:'', visit:false, sig:''};
+
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function iso(d){ return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()); }
+  function parse(v){
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || ''); if (!m) return null;
+    var d = new Date(+m[1], +m[2]-1, +m[3]);
+    return (d.getFullYear() === +m[1] && d.getMonth() === +m[2]-1 && d.getDate() === +m[3]) ? d : null;
+  }
+  function today(){ var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
+  function shortDate(d){ return pad(d.getDate()) + '.' + pad(d.getMonth()+1) + '.' + d.getFullYear() + '.'; }
+  function longLoc(d){ return WD_LOC[d.getDay()] + ', ' + d.getFullYear() + '. gada ' + d.getDate() + '. ' + MON_LOC[d.getMonth()]; }
+  function clean(s){ return String(s || '').replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, ''); }
+  function occText(){
+    if (st.occ === 'cits') return clean(st.other).replace(/[.!?]+$/, '');
+    return OCC[st.occ] || '';
+  }
+  function subject(){
+    var p = []; if (st.d) p.push(shortDate(st.d)); var o = occText(); if (o) p.push(o);
+    return p.length ? 'Zāles pieteikums: ' + p.join(', ') : 'Jautājums par zāles īri';
+  }
+  function body(){
+    var L = ['Labdien!', ''];
+    if (st.d) L.push('Vēlos uzzināt, vai zāle ir brīva ' + longLoc(st.d) + '.');
+    else L.push('Vēlos uzzināt par zāles īri. Datums vēl nav izvēlēts.');
+    var o = occText(); if (o) L.push('Pasākums: ' + o + '.');
+    if (st.g) L.push('Cilvēku skaits: ' + st.g + '.');
+    if (st.visit) L.push('Labprāt atbrauktu apskatīt zāli klātienē.');
+    L.push('');
+    L.push(st.d ? 'Lūdzu, atrakstiet, vai datums ir brīvs un cik maksā zāles īre.' : 'Lūdzu, atrakstiet, kuri datumi ir brīvi un cik maksā zāles īre.');
+    L.push('', 'Paldies!');
+    var s = clean(st.sig); if (s) L.push(s);
+    return L.join('\n');
+  }
+
+  var fields = [[$('d1'), $('df1'), $('dt1'), WD_SHORT], [$('d2'), $('df2'), $('dt2'), WD_NOM]];
+  function paint(src){
+    fields.forEach(function(f){
+      var v = st.d ? iso(st.d) : ''; if (f[0] !== src && f[0].value !== v) f[0].value = v;   /* never rewrite the field that is being edited */
+      f[1].classList.toggle('empty', !st.d);
+      f[2].textContent = st.d ? shortDate(st.d) + ', ' + f[3][st.d.getDay()] : 'Izvēlies datumu';
+    });
+    $('subj').textContent = subject();
+    $('dsubj').textContent = subject();
+    $('body').textContent = body();
+    $('send').href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject()) + '&body=' + encodeURIComponent(body().replace(/\n/g, '\r\n'));
+  }
+  function setDate(v, src){
+    var d = parse(v), hint = '';
+    if (d && d < today()){ d = null; hint = 'Šis datums jau ir pagājis, izvēlies citu.'; }
+    st.d = d; $('dhint').textContent = hint; paint(src);
+  }
+  var min = iso(today());
+  fields.forEach(function(f){
+    f[0].min = min;
+    /* Typing a date on a keyboard passes through half-typed years (0002, 0020, 0202): those are left alone.
+       A date that has passed gets the hint but stays in the field until it loses focus, so it can be corrected in place. */
+    function half(){ var v = f[0].value, d = parse(v); return !!v && (!d || d.getFullYear() < 2000); }
+    function on(){ if (half() || (!f[0].value && !st.d)) return; setDate(f[0].value, f[0]); }
+    f[0].addEventListener('change', on);
+    f[0].addEventListener('input', on);
+    f[0].addEventListener('blur', function(){ var d = parse(f[0].value); if (half() || (d && d < today())) f[0].value = st.d ? iso(st.d) : ''; });
+    f[0].addEventListener('click', function(){ if (f[0].showPicker) { try { f[0].showPicker(); } catch(e){} } });
+  });
+
+  function group(box, key, after){
+    var chips = [].slice.call(box.querySelectorAll('.chip'));
+    function set(v){
+      st[key] = v;
+      chips.forEach(function(c){ c.setAttribute('aria-pressed', c.getAttribute('data-v') === v ? 'true' : 'false'); });
+      if (after) after(v); paint();
+    }
+    chips.forEach(function(c){ c.addEventListener('click', function(){ var v = c.getAttribute('data-v'); set(st[key] === v ? '' : v); }); });
+    return set;
+  }
+  var other = $('occ-other');
+  var setOcc = group($('occ'), 'occ', function(v){ other.hidden = v !== 'cits'; });
+  var setG = group($('gst'), 'g');
+  other.addEventListener('input', function(){ st.other = other.value; paint(); });
+  $('visit').addEventListener('change', function(){ st.visit = this.checked; paint(); });
+  $('sig').addEventListener('input', function(){ st.sig = this.value; paint(); });
+  $('tf').addEventListener('submit', function(e){ e.preventDefault(); });
+
+  [].forEach.call(document.querySelectorAll('[data-occ]'), function(a){
+    a.addEventListener('click', function(){ setOcc(a.getAttribute('data-occ')); });
+  });
+
+  var copyBtn = $('copy'), copyT;
+  copyBtn.addEventListener('click', function(){
+    var t = body();
+    function ok(){ copyBtn.textContent = 'Nokopēts'; clearTimeout(copyT); copyT = setTimeout(function(){ copyBtn.textContent = 'Nokopēt tekstu'; }, 2200); }
+    function old(){ try { var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); ok(); } catch(e){} }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, old); else old();
+  });
+
+  /* deep links: ?datums=2026-12-12&pasakums=zsv&cilveki=60–100&apskate=1 */
+  try {
+    var q = new URLSearchParams(location.search), gv = (q.get('cilveki') || '').replace('-', '–');
+    if (q.get('datums')) setDate(q.get('datums'));
+    if (q.get('pasakums') && OCC.hasOwnProperty(q.get('pasakums'))) setOcc(q.get('pasakums'));
+    [].some.call($('gst').querySelectorAll('.chip'), function(c){ if (c.getAttribute('data-v') === gv) { setG(gv); return true; } });
+    if (q.get('apskate') === '1') { $('visit').checked = true; st.visit = true; }
+  } catch(e){}
+  paint();
+
+  /* phone dock: "ask about a date" once the first date field has scrolled away; inside the tool it turns into the live subject line until the letter itself is on screen */
+  var dock = $('dock'), seen = {start:true, tool:false, form:false, letter:false, foot:false};
+  function dockPaint(){
+    var off = seen.start || seen.foot;
+    dock.classList.toggle('on', !off && !seen.tool);
+    dock.classList.toggle('sum', !off && seen.tool && seen.form && !seen.letter);
+  }
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ seen[e.target.getAttribute('data-dock')] = e.isIntersecting; }); dockPaint();
+    }, {threshold:0});
+    [['.starter','start'], ['#pieteikums','tool'], ['#tf','form'], ['.letter','letter'], ['.foot','foot']].forEach(function(p){
+      var el = document.querySelector(p[0]); if (el){ el.setAttribute('data-dock', p[1]); io.observe(el); }
+    });
+  }
+})();
+</script>
+</body>
+</html>
